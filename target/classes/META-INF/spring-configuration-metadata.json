@@ -1,0 +1,16 @@
+{
+  "groups": [
+    {
+      "name": "owl.brewery",
+      "type": "uk.oakwoodland.msscbreweryclient.web.client.BreweryClient",
+      "sourceType": "uk.oakwoodland.msscbreweryclient.web.client.BreweryClient"
+    },
+    {
+      "name": "owl.customer",
+      "type": "uk.oakwoodland.msscbreweryclient.web.client.CustomerClient",
+      "sourceType": "uk.oakwoodland.msscbreweryclient.web.client.CustomerClient"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
