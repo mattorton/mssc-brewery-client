@@ -1,4 +1,4 @@
-package guru.springframework.msscbreweryclient.web.model;
+package uk.oakwoodland.msscbreweryclient.web.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
