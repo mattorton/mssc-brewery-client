@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import uk.oakwoodland.msscbreweryclient.web.model.BeerDto;
-import uk.oakwoodland.msscbreweryclient.web.model.BeerStyleEnum;
 
 import java.net.URI;
 import java.util.UUID;
