@@ -1,5 +1,6 @@
 package uk.oakwoodland.msscbreweryclient.web.client;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,6 +17,9 @@ class CustomerClientTest {
     @Autowired
     CustomerClient customerClient;
 
+    @Autowired // default Jackson Spring implementation
+    ObjectMapper objectMapper;
+
     @Test
     void getCustomer() {
         CustomerDto customerDto = customerClient.getCustomer(UUID.randomUUID());
@@ -26,7 +30,7 @@ class CustomerClientTest {
     void saveNewCustomer() {
 
         CustomerDto customerDto = CustomerDto.builder()
-                .name("Matthew")
+                .customerName("Matthew")
                 .build();
 
         URI uri = customerClient.saveNewCustomer(customerDto);
@@ -39,7 +43,7 @@ class CustomerClientTest {
 
         CustomerDto customerDto = CustomerDto.builder()
                 .id(UUID.randomUUID())
-                .name("Matthew")
+                .customerName("Matthew")
                 .build();
 
         customerClient.updateCustomer(customerDto.getId(), customerDto);
